@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Oxygen;
+        color: white;
+        font-size: 100px;
+      }
+
+      .split {
+        height: 50%;
+        width: 25%;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top:0px;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: black;
+      }
+
+      .mousezone {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: pink;
+      }
+
+      .topleft {
+        left: 0;
+        top: 0;
+        background-color: #e6194b;
+      }
+
+      .topmidL {
+        left: 25%;
+        top: 0;
+        background-color: #3cb44b;
+      }
+
+      .topmidR {
+        right: 25%;
+        top: 0;
+        background-color: #c34bb4;
+      }
+
+      .topright {
+        right: 0;
+        top: 0;
+        background-color: #ffe119;
+      }
+
+      .botleft {
+        left: 0;
+        bottom: 0;
+        background-color: #0082c8;
+      }
+
+      .botmidL {
+        left: 25%;
+        bottom: 0;
+        background-color: #f58231;
+      }
+
+      .botmidR {
+        right: 25%;
+        bottom: 0;
+        background-color: #5f2813;
+      }
+
+      .botright {
+        right: 0;
+        bottom: 0;
+        background-color: #911eb4;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .centered img {
+        width: 100px;
+        border-radius: 50%;
+      }
+
+      .split:hover .overlay {
+        opacity: 1;
+      }
+
+    </style>
+
+    <script language="javascript" type="text/javascript">
+      function playSound(soundfile) {
+        document.getElementById("myspan").innerHTML=
+          "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+      }
+    </script>
+  </head>
+  <body>
+    <span id="myspan"></span>
+    <!-- six divs, each for a website -->
+    <!-- top left -->
+    <div class="split topleft">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>RADIO KOREA</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='http://www.radiokorea.com/';" onmouseover="playSound('radio.mp3')">
+
+      </div>
+    </div>
+    <!-- top middle -->
+    <div class="split topmidL">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>C3TV</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='http://www.goodtv.co.kr/';" onmouseover="playSound('c3tv.mp3')">
+
+      </div>
+    </div>
+    <!-- top right -->
+    <div class="split topmidR">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>MUSIC</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='https://www.youtube.com/watch?v=JhDIILjlhBQ';" onmouseover="playSound('music.mp3')">
+
+      </div>
+    </div>
+    <!-- top right -->
+    <div class="split topright">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>YOUTUBE</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='https://www.youtube.com/';" onmouseover="playSound('music.mp3')">
+
+      </div>
+    </div>
+    <!-- bottom left -->
+    <div class="split botleft">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>SCIENCE</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='http://www.sciencemag.org/';" onmouseover="playSound('science.mp3')">
+
+      </div>
+    </div>
+    <!-- bottom middle left -->
+    <div class="split botmidL">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>UFO TV</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='https://www.ufotv.com/';" onmouseover="playSound('ufotv.mp3')">
+
+      </div>
+    </div>
+    <!-- bottom middle right -->
+    <div class="split botmidR">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>CNN</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='https://www.cnn.com/';" onmouseover="playSound('cnn.mp3')">
+
+      </div>
+    </div>
+    <!-- bottom right -->
+    <div class="split botright">
+      <div class="overlay">
+
+      </div>
+      <div class="centered">
+        <h1>NIKE</h1>
+      </div>
+      <div class="mousezone" onclick="window.location='https://www.nike.com/';" onmouseover="playSound('cnn.mp3')">
+
+      </div>
+    </div>
+  </body>
+</html>
