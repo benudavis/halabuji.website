@@ -12,7 +12,7 @@
 
       .split {
         height: 50%;
-        width: 50%;
+        width: 33.3333%;
         position: fixed;
         z-index: 1;
         overflow-x: hidden;
@@ -52,16 +52,16 @@
       .topleft {
         left: 0;
         top: 0;
+        background-color: violet;
+      }
+
+      .topmid {
+        left: 33.33333%;
+        top: 0;
         background-color: blue;
       }
 
-      /* .topmidL {
-        left: 25%;
-        top: 0;
-        background-color: #3cb44b;
-      }
-
-      .topmidR {
+      /* .topmidR {
         right: 25%;
         top: 0;
         background-color: #c34bb4;
@@ -79,13 +79,13 @@
         background-color: green;
       }
 
-      /* .botmidL {
-        left: 25%;
+      .botmid {
+        left: 33.33333%;
         bottom: 0;
-        background-color: #f58231;
+        background-color: red;
       }
 
-      .botmidR {
+      /* .botmidR {
         right: 25%;
         bottom: 0;
         background-color: #5f2813;
@@ -94,7 +94,7 @@
       .botright {
         right: 0;
         bottom: 0;
-        background-color: red;
+        background-color: #911eb4;
       }
 
       .centered {
@@ -126,18 +126,18 @@
   <body>
     <span id="myspan"></span>
     <!-- six divs, each for a website -->
-    <!-- top left -->
-    <!-- <div class="split topleft">
+    <!-- top middle -->
+    <div class="split topmid">
       <div class="overlay">
 
       </div>
       <div class="centered">
         <h1>RADIO KOREA</h1>
       </div>
-      <div class="mousezone" onclick="window.location='http://www.radiokorea.com/';" onmouseover="playSound('radio.mp3')">
+      <div class="mousezone" onclick="window.location='http://www.radiokorea.com/radio/onair/';" onmouseover="playSound('radio.mp3')">
 
       </div>
-    </div> -->
+    </div>
     <!-- top left -->
     <div class="split topleft">
       <div class="overlay">
@@ -187,17 +187,17 @@
       </div>
     </div>
     <!-- bottom middle left -->
-    <!-- <div class="split botmidL">
+    <div class="split botmid">
       <div class="overlay">
 
       </div>
       <div class="centered">
-        <h1>UFO TV</h1>
+        <h1>YOUTUBE</h1>
       </div>
-      <div class="mousezone" onclick="window.location='https://www.ufotv.com/';" onmouseover="playSound('ufotv.mp3')">
+      <div class="mousezone" onclick="window.location='https://www.youtube.com/';" onmouseover="playSound('youtube.mp3')">
 
       </div>
-    </div> -->
+    </div>
     <!-- bottom middle right -->
     <!-- <div class="split botmidR">
       <div class="overlay">
